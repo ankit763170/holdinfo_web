@@ -12,7 +12,7 @@ const connect = async () => {
       useCreateIndex: true, // Optional: enables Mongoose to create indexes for unique fields automatically
       useFindAndModify: false, // Optional: disables Mongoose's deprecated findAndModify() function
     };
-    const client = await mongoose.connect('mongodb+srv://ankitjha:ankitjha@cluster0.maekmkp.mongodb.net/?retryWrites=true&w=majority');
+    const client = await mongoose.connect('mongodb+srv://<username>:<password>@cluster0.maekmkp.mongodb.net/?retryWrites=true&w=majority');
     console.log("Connected to MongoDB!");
     return client;
   } catch (error) {
